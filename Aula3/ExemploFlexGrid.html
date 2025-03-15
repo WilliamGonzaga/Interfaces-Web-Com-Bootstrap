@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox e Grid Propriedades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+
+        .container {
+            border: 2px solid black;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* FLEXBOX EXEMPLOS */
+        .flex-container {
+            display: flex; /* Define o container como flexbox */
+            flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+            justify-content: space-between; /* Distribui espaço igual entre os itens */
+            padding: 10px; /* Adiciona espaçamento interno de 10px */
+            border: 2px solid green; /* Adiciona borda verde de 2px */
+        }
+
+        .flex-item {
+            background-color: lightblue; /* Define cor de fundo azul claro */
+            padding: 20px; /* Adiciona espaçamento interno de 20px */
+            text-align: center; /* Centraliza o texto */
+            margin: 5px; /* Adiciona margem externa de 5px */
+        }
+
+        .flex-column {
+            flex-direction: column; /* Organiza os itens em coluna vertical */
+        }
+
+        .flex-space-between {
+            justify-content: space-between; /* Distribui espaço igual entre os itens */
+        }
+
+        .flex-space-evenly {
+            justify-content: space-evenly; /* Distribui espaço igual entre e ao redor dos itens */
+        }
+
+        /* GRID EXEMPLOS */
+        .grid-container {
+            display: grid; /* Define o container como grid */
+            grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de tamanho igual */
+            gap: 10px; /* Define espaçamento de 10px entre os itens */
+            border: 2px solid purple; /* Adiciona borda roxa de 2px */
+            padding: 10px; /* Adiciona espaçamento interno de 10px */
+        }
+
+        .grid-item {
+            background-color: lightcoral; /* Define cor de fundo coral claro */
+            padding: 20px; /* Adiciona espaçamento interno de 20px */
+            text-align: center; /* Centraliza o texto */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propriedades do Flexbox e Grid</h1>
+
+    <h2>Flexbox</h2>
+   
+    <div class="container flex-container flex-space-between">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <div class="container flex-container flex-column">
+        <div class="flex-item">Item A</div>
+        <div class="flex-item">Item B</div>
+        <div class="flex-item">Item C</div>
+    </div>
+
+    <div class="container flex-container flex-wrap">
+        <div class="flex-item">Item X</div>
+        <div class="flex-item">Item Y</div>
+        <div class="flex-item">Item Z</div>
+        <div class="flex-item">Item W</div>
+    </div>
+
+    <div class="container flex-container flex-space-evenly">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <p><strong>Principais propriedades do Flexbox:</strong></p>
+    <ul>
+        <li><strong>display: flex</strong> - Ativa o modelo Flexbox.</li>
+        <li><strong>flex-direction</strong>: row | row-reverse | column | column-reverse.</li>
+        <li><strong>justify-content</strong>: flex-start | flex-end | center | space-between | space-around | space-evenly.</li>
+        <li><strong>align-items</strong>: flex-start | flex-end | center | stretch | baseline.</li>
+        <li><strong>align-content</strong>: flex-start | flex-end | center | space-between | space-around | stretch.</li>
+        <li><strong>flex-wrap</strong>: nowrap | wrap | wrap-reverse.</li>
+        <li><strong>flex-grow</strong>: Define quanto um item pode crescer em relação aos outros.</li>
+        <li><strong>flex-shrink</strong>: Define o fator de redução de tamanho dos itens.</li>
+        <li><strong>flex-basis</strong>: Define o tamanho inicial de um item antes da distribuição do espaço.</li>
+    </ul>
+
+    <h2>Grid Layout</h2>
+
+    <div class="container grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+    </div>
+
+    <p><strong>Principais propriedades do Grid:</strong></p>
+    <ul>
+        <li><strong>display: grid</strong> - Ativa o modelo Grid.</li>
+        <li><strong>grid-template-columns</strong>: Define o número e tamanho das colunas.</li>
+        <li><strong>grid-template-rows</strong>: Define o número e tamanho das linhas.</li>
+        <li><strong>gap</strong>: Define o espaço entre os elementos do grid.</li>
+        <li><strong>justify-items</strong>: start | end | center | stretch.</li>
+        <li><strong>align-items</strong>: start | end | center | stretch.</li>
+        <li><strong>grid-column</strong>: Define a posição de uma célula em relação às colunas.</li>
+        <li><strong>grid-row</strong>: Define a posição de uma célula em relação às linhas.</li>
+    </ul>
+</body>
+
+</html>

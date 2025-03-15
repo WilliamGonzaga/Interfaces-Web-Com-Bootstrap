@@ -1,0 +1,33 @@
+h4{
+    color: brown;
+}
+
+body{
+    background-color: bisque;
+}
+
+header{
+    margin-left: 30px;
+}
+
+main{
+    background-color: darkgray;
+}
+
+p{
+    color: gold;
+    text-align: center;
+}
+
+footer{
+    text-align: right;
+
+}
+
+link:hover{
+    color: red;
+}
+
+div{
+    text-align: center;
+}
