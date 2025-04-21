@@ -9,7 +9,7 @@
         :root{
             --bs-cordefundo1: rgb(160, 153, 150);
             --bs-cordefundo2: rgb(196, 197, 133);
-            --bs-cordefundo3: red;
+            --bs-cordefundo3: rgb(180, 224, 224);
         }
 
         .bs-cordefundo1{
@@ -59,6 +59,7 @@
                 </div>            
             </form>
         </div>
+
         <hr>
         
         <div class="container bs-cordefundo2">
@@ -129,6 +130,127 @@
         </div>
 
         <hr>
+
+        <div class="container bs-cordefundo3">
+
+            <!-- Monte um formulário de pedido online para uma pizzaria fictícia, com nome do cliente, telefone, endereço completo, escolha de sabor via select, tamanho da pizza com radio buttons, opção de borda recheada e campo de observações, finalizando com um botão de envio. -->
+            
+            <h2>Terceiro Formulario - Pedido Pizza</h2>
+            <form action="" class="row was-validated">
+                <div class="mb-3 col-md-6 col-sm-12">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite Seu Nome" required>
+                    <div class="invalid-feedback">Digite Um Nome Valido</div>
+                    <div class="valid-feedback">Parabens, Nome Valido</div>
+                </div>
+
+                
+                 <div class="mb-3 col-md-6 col-sm-12">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="Digite O telefone" required>
+                    <div class="invalid-feedback">Digite Um Telefone alido</div>
+                    <div class="valid-feedback">Parabens, Telefone Valido</div>
+                 </div>
+
+            
+                <div class="mb-3 col-md-6 col-sm-12">
+                    <label for="rua" class="form-label">Rua</label>
+                    <input type="text" class="form-control" name="rua" id="rua" placeholder="Digite O Nome Da Rua" required>
+                    <div class="invalid-feedback">Nome Da Rua Invalido</div>
+                    <div class="valid-feedback">Parabens, Nome Da Rua Valido</div>
+                </div>
+
+                <div class="mb-3 col-md-2 col-sm-12">
+                    <label for="numero" class="form-label">Número</label>
+                    <input type="text" class="form-control" name="numero" id="numero" placeholder="Digite O Número Da Casa" required>
+                    <div class="invalid-feedback">Número Da Casa Invalido</div>
+                    <div class="valid-feedback">Parabens, Número valido</div>
+                </div>
+
+                <div class="mb-3 col-md-4 col-sm-12">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" name="bairro" id="bairro" placeholder="Digite O Bairro" required>
+                    <div class="invalid-feedback">Bairro Invalido</div>
+                    <div class="valid-feedback">Parabens, Bairro valido</div>
+                </div>
+
+                <div class="mb-3 col-md-6 col-sm-12">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Digite A Cidade" required>
+                    <div class="invalid-feedback">Cidade Invalida</div>
+                    <div class="valid-feedback">Parabens, Cidade Valida</div>
+
+                </div>
+
+                <div class="mb-3 col-md-2 col-sm-12">
+                    <label for="estado" class="form-label">Estado:</label>
+                    <select class="form-select" id="estado" name="estado" required>
+                      <option selected>UF</option>
+                      <option value="1">SP</option>
+                      <option value="2">RJ</option>
+                      <option value="3">MG</option>
+                    </select>
+                  </div>
+
+                  <div class="mb-3 col-md-4 col sm-12">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" name="cep" maxlength="8" id="cep" placeholder="Digite O CEP" required>
+                    <div class="invalid-feedback">CEP Invalida</div>
+                    <div class="valid-feedback">Parabens, CEP Valida</div>
+                  </div>
+                  
+                  <div class="mb-3 col-md-4 col-sm-12">
+                    <label for="pizza" class="form-label">Sabores Pizzas</label>
+                    <select class="form-select" id="pizza" name="pizza" required>
+                      <option selected>Selecione o Sabor</option>
+                      <option value="1">Calabreza</option>
+                      <option value="2">4 Querijos</option>
+                      <option value="3">Portuguesa</option>
+                      <option value="4">Catu Frango</option>
+                      <option value="5">Marguerita</option>
+                    </select>
+                  </div>
+                                    
+                  <div class="mb-3 col-md-4 col-sm-12">
+                    <label for="tamanho" class="form-label">Tamanho Da Pizza</label><br>
+                  
+                    <div class="d-flex gap-2 flex-wrap">
+                      <input type="radio" class="btn-check" name="tamanhoPizza" id="pizza-broto" autocomplete="off" value="broto" required>
+                      <label class="btn btn-outline-primary" for="pizza-broto">Broto</label>
+                  
+                      <input type="radio" class="btn-check" name="tamanhoPizza" id="pizza-familia" autocomplete="off" value="familia">
+                      <label class="btn btn-outline-danger" for="pizza-familia">Família</label>
+                    </div>
+                  </div>
+
+                  <div class="mb-3 col-md-4 col-sm-12">
+                    <label class="form-label">Borda Recheada?</label><br>
+                        <div class="d-flex gap-3"> <!-- usado para deixar um do lado do outro -->
+                            <input type="radio" class="form-check-input" name="borda" id="sim" value="sim" required>
+                            <label for="sim" class="form-check-label">Sim</label>
+                    
+                            <input type="radio" class="form-check-input" name="borda" id="nao" value="nao">
+                            <label for="nao" class="form-check-label">Não</label>
+                        </div>
+
+                  </div>
+
+
+                <div class="mb-3 col-12">
+                    <label for="observacoes" class="form-label">Observações</label>
+                    <textarea class="form-control" id="observacoes" name="observacoes" rows="3" placeholder="Ex: sem cebola, cortar em 8 pedaços..." required></textarea>
+                </div>
+  
+
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+
+
+
+            </form>
+        </div>
+        
     
 
 
