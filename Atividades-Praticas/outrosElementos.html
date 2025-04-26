@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo Outros Elementos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css " rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>  
     <h1>Exemplo Outros Elementos</h1>
@@ -21,7 +22,7 @@
         <hr>
         
         <!--nav-pill e nav-underline-->
-        <nav class="nav nav-fill nav-pills "> <!-- "nav-fill" ele separa o link dos menu para toda a tela-->
+        <nav class="nav nav-fill nav-pills gap-2"> <!-- "nav-fill" ele separa o link dos menu para toda a tela-->
             <a href="#" class="nav-link active">Link 1</a>
             <a href="#" class="nav-link active">Link 2</a>
             <a href="#" class="nav-link active">Link 3</a>
@@ -33,7 +34,7 @@
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#"><i class="bi bi-bootstrap-fill"></i></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -68,6 +69,99 @@
             </div>
           </nav>
 
+          <hr>
+
+          <i class="bi bi-bootstrap-fill h1 text-danger"></i>
+          <i class="bi bi-apple" style="font-size: 50px; color:rgb(97, 17, 101)"></i>
+
+          <hr>
+
+          <nav class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Loja</a></li>
+            <li class="breadcrumb-item"><a href="#">Nike</a></li>
+            <li class="breadcrumb-item"><a href="#">Tênis</a></li>
+            <li class="breadcrumb-item"><a href="#">Infantil</a></li>
+            <li class="breadcrumb-item"><a href="#">Vermelho</a></li>
+          </nav>
+
+          <hr>
+          <div class="spinner-border"></div>
+          <div class="spinner-grow"></div>
+
+          <hr>
+
+          <div class="progress">
+            <div class="progress-bar w-50">50% De Carregamento</div>
+          </div>
+
+          <br>
+
+          <div class="progress">
+            <div class="progress-bar" style="background-color: yellow; width: 35%; color: black;">33%</div>
+          </div>
+
+          <hr>
+
+          <div class="alert alert-danger">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, debitis.
+          </div>
+          
+          <div class="alert alert-primary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, debitis.
+          </div>
+          
+          <div class="alert alert-warning">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, debitis.
+          </div>
+          
+          <div class="alert alert-success">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, debitis.
+          </div>
+
+          <hr>
+
+          <p class="d-inline-flex gap-1">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Link with href
+            </a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Button with data-bs-target
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+
+          <hr>
+
+          
+                    <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Clique Aqui Para Excluir
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    Tem Certeza Que Deseja Excluir Os Dados
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <hr>
 
     </div>
 
